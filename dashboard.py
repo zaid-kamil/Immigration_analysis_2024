@@ -31,6 +31,7 @@ st.set_page_config(
     layout="wide",
     page_title ="Immigration Data Analysis",
     page_icon="📊",
+    initial_sidebar_state="collapsed"
 )
 
 # loading the data
@@ -86,7 +87,9 @@ figContinent = px.pie(cdf, names=cdf.index, values='total',
                     title="Continent wise Immigration", 
                     hole=.5, 
                     height=500)
-c2.plotly_chart(figContinent, use_container_width=True)
+fig2Continent = px.funnel_area(names=cdf.index, values=cdf['total'])
+c1.plotly_chart(figContinent, use_container_width=True)
+c2.plotly_chart(fig2Continent, use_container_width=True)
 figMap = px.choropleth(df, 
         locations=df.index, 
         locationmode='country names',
