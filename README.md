@@ -3,7 +3,7 @@
 
 
 # live version
-[Streamlit](https://zaid-kamil-immigration-analysis-2024-dashboard-quat04.streamlit.app/)
+[View on Streamlit Cloud](https://zaid-kamil-immigration-analysis-2024-dashboard-quat04.streamlit.app/)
 ## Project Summary
 The goal of this project is to analyze the United Nations dataset on international migration. The dataset contains information on the number of immigrants leaving coutries per year (1980-2013).
 
